@@ -78,7 +78,7 @@ nav .fab:hover {
 #navbarCollapse a {
     font-size: 20px;
     font-weight: 700;
-    color: #ff3346!important;
+    color: #2c3e50!important;
 }
 
 #navbarCollapse a:hover {
@@ -176,7 +176,7 @@ h1 {
 }
 
 .bloc h2, .bloc2 h2 {
-	margin: 0 0 40px;
+	margin: 0 0 60px;
 	text-align: center;
 	font-weight: 500;
 	font-size: 60px;
@@ -235,7 +235,7 @@ h1 {
 
 .marg {
 	padding: 3px;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	font-family: 'Aria', sans-serif;
 	color: #2c3e50;
 }
