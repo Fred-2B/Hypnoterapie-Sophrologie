@@ -10,6 +10,13 @@ body {
 	box-sizing: border-box;
 }
 
+video {
+	width: 100%;
+	height: 70vh;
+	object-fit: cover;
+}
+
+/*
 header {
 	background-image: url(../img/blue_merR.jpg);
 	background-position: center;
@@ -19,7 +26,8 @@ header {
 	max-width: 100%;
 	height: 70vh;
 }
-
+*/
+	/* ANIMATION LOGO RESEAU SOCIAL */
 nav .face {
 	font-size: 40px;
     color: #3b5998;
@@ -56,11 +64,11 @@ nav .fab:hover {
  
  .container-flex {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 
 .navbar {
-	padding: 0 15px;
+	padding: 0;
 	background-color: #fff;
 	border-top: 5px solid  #ff3346;
 	border-bottom: 2px solid  #ff3346;
@@ -68,11 +76,11 @@ nav .fab:hover {
 
 .navbar .logo img {
 	border-radius: 50%;
-	max-height: 95px;
+	max-height: 70px;
 }
 
 .navbar img {
-	max-height: 100px;
+	max-height: 90px;
 }
 
 #navbarCollapse a {
@@ -92,11 +100,16 @@ nav .fab:hover {
 h1 {
 	text-align: center;
 	font-weight: 500;
-	font-size: 75px;
+	font-size: 4.5rem;
 	font-family: 'Kaushan Script', cursive;
-	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
+	/*text-shadow: #2c3e50 0.1em 0.1em 0.3em;*/
+	text-shadow: 1px 2px 6px #eee;
 	color: #2c3e50;
-	padding: 200px 0 0;
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
 	/* CONTACTEZ-MOI */
@@ -138,7 +151,7 @@ h1 {
 
 #content1 {
 	padding: 50px 0;
-	border-top: 2px solid #2c3e50;
+	
 	border-bottom: 1px solid  #2c3e50;
 	/*background: #f1f1f1;*/
 }
@@ -168,16 +181,20 @@ h1 {
 	font-weight: 500;
 }
 
-#content2, #content3 {
+#content2, #content3, #content5 {
 	padding: 10px 0;
 }
 
-.bloc,.bloc2 {
-	max-width: 1000px; 
-	margin: 100px 0;
+.bloc, .bloc2 {
+	max-width: 1100px; 
+	margin: 100px auto;
 }
 
-.bloc h2, .bloc2 h2 {
+.bloc3 {
+	margin: 100px auto 50px;
+}
+
+.bloc h2, .bloc2 h2, .bloc3 h2 {
 	margin: 0 0 60px;
 	text-align: center;
 	font-weight: 500;
@@ -193,6 +210,16 @@ h1 {
 	font-size: 19px;
 	font-family: 'Aria', sans-serif;
 	color: #2c3e50;
+}
+
+.bloc3 figure {
+	font-family: 'Aria', sans-serif;
+	color: #2c3e50;
+	text-align: justify;
+}
+
+.bloc3 a {
+	text-decoration: none;
 }
 
 #content4 {
@@ -275,7 +302,7 @@ h1 {
 }
 
 #diplomes {
-	margin: 100px auto 10px;
+	margin: 0 auto 10px;
 	/*border: 1px solid #38628d;*/
 }
 
@@ -378,8 +405,13 @@ h1 {
 		height: 30vh;
 	}
 	h1 {
-		padding: 50px;
-		font-size: 50px;
+		text-shadow: 1px 2px 6px #eee;
+		top: 10%;
+		font-size: 40px;
+	}
+	#content1 img {
+		width: auto;
+		height: 60%;
 	}
 	.cartes {
 		height: 60vh;
