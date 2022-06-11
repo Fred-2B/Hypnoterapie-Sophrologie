@@ -68,7 +68,7 @@ nav .fab:hover {
 
 .navbar {
 	padding: 0px 15px;
-	background-color: #fff;
+	background-color: #e2e2e2;
 	border-top: 5px solid  #ff3346;
 	border-bottom: 2px solid  #ff3346;
 }
@@ -150,7 +150,7 @@ iframe {
 	font-size: 1.2rem;
 }
 
-#tarif .fb {
+#tarif .block {
 	margin: 0 auto;
 	text-align:center;
 }

@@ -56,20 +56,20 @@ nav .fab:hover {
 
  /* NAVBAR */
  
- .container-flex {
+.container-flex {
 	display: flex;
 	justify-content: space-around;
 }
 
 .navbar {
 	padding: 0;
-	background-color: #dddbdb;
+	background-color: #e2e2e2;
 	border-top: 5px solid #ff3346;
 	border-bottom: 2px solid #ff3346;
 }
 
 #navbarCollapse a {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     color: #2c3e50!important;
 }
@@ -87,8 +87,8 @@ nav .fab:hover {
 }
 
 .box {
-	margin: 10px 0;
 	display: flex;
+	margin: 10px 0;
 	width: 100px;
 	height: 100px;
 	transform-style: preserve-3d;
@@ -153,12 +153,10 @@ h1 {
 	margin: 0 auto;
 }
 
-	/* CONTACTEZ-MOI */
+	/* INFORMATIONS ET RENDEZ-VOUS */
 
 .contact {
-	margin: 0;
-	margin-left: auto;
-    margin-right: auto;
+	margin: 0 auto;
 	background: #38628d;
 	border-radius: 25px;
 	box-shadow: #2c3e50 0px 3px 25px 2px;
@@ -176,14 +174,10 @@ h1 {
 	cursor: pointer;
 }
 
-.contact h5 {
-	margin-bottom: 5px;
-}
-
 .minicard__content {
 	font-size: 20px;
 	margin: 15px 20px;
-	font-weight: 600;
+	font-weight: 300;
 	color: #f1f1f1;
 	text-align: center;
 }
@@ -235,7 +229,7 @@ h1 {
 }
 
 #content2, #content3, #content5 {
-	padding: 10px 0;
+	padding: 26px 0;
 }
 
 .bloc, .bloc2 {
@@ -244,10 +238,10 @@ h1 {
 }
 
 .bloc3 {
-	margin: 100px auto 80px;
+	margin: 100px auto 0;
 }
 
-.bloc h2, .bloc2 h2, .bloc3 h2 {
+.bloc h2, .bloc2 h2, .bloc3 h2, .bloc4 h2 {
 	margin: 0 0 60px;
 	text-align: center;
 	font-weight: 500;
@@ -285,6 +279,15 @@ h1 {
 	text-decoration: none;
 }
 
+.bloc4 {
+	padding: 120px 0 10px;
+	/*border: 1px solid #2c3e50;*/
+}
+
+#content6 {
+	margin: 0 auto 100px;
+}
+
 #content4 {
 	border-top: 1px solid #2c3e50;
 	border-bottom: 1px solid #2c3e50;
@@ -296,7 +299,7 @@ h1 {
 	background-position: center;
 	display: block;
 	position: relative;
-	margin-bottom: 80px;
+	margin-bottom: 100px;
 }
 
 #content4 .overlay {
@@ -366,7 +369,7 @@ h1 {
 }
 
 #diplomes {
-	margin: 20px auto 100px;
+	margin: 100px auto;
 	/*border: 1px solid #38628d;*/
 }
 
@@ -453,12 +456,6 @@ h1 {
 */
 
 @media only screen and (max-width: 940px) {
-	#reservation button {
-		width: 140px;
-		height: 35px;
-		line-height: 15px;
-		padding: 0;
-	}
 	h1 {
 		font-weight: 400;
 		font-size: 50px;
@@ -476,7 +473,7 @@ h1 {
 	}
 	#content1 img {
 		width: auto;
-		height: 60%;
+		height: 50%;
 	}
 	.cartes {
 		height: 60vh;
