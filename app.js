@@ -12,7 +12,7 @@ allCross.forEach(element => {
 
         // console.log(this.src);
         if(this.src.includes('croix')){
-            this.src = '/ressources/minus.svg';
+            this.src = '/ressources/minus.png';
             gsap.to(currentChoice, {duration: 0.2, height: height + 40, opacity: 1, padding: '20px 15px'})
         } else if (this.src.includes('minus')){
             this.src = '/ressources/croix.jpg';
