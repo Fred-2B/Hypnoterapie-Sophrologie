@@ -281,10 +281,15 @@ h1 {
 
 .bloc4 {
 	margin: 108px auto;
-	padding: 20px 0 40px;
+	padding: 25px 15px 50px;
 	border-radius: 25px;
 	border: 1px solid #2c3e50;
 	box-shadow: #2c3e50 0px 3px 25px 2px;
+}
+
+.accordion-item {
+	width: 80%;
+	margin: 0 auto;
 }
 
 #content4 {
@@ -367,56 +372,6 @@ h1 {
     }
 }
 
-	/* FAQ */
-
-.container-faq {
-	width: 70%;
-	max-width: 900px;
-	min-width: 700px;
-	height: auto;
-	margin: 10px auto 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: flex-start;
-}
-.questions {
-	width: 100%;
-	height: auto;
-	margin: 5px;
-}
-.visible-pannel {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background: #f1f1f1;
-	border-radius: 10px;
-	position: relative;
-	z-index: 100;
-}
-.visible-pannel h3 {
-	margin-left: 10px;
-	padding: 15px 5px;
-	font-size: 25px;
-}
-.visible-pannel img {
-	margin-right: 10px;
-	width: 25px;
-	cursor: pointer;
-}
-.toggle-pannel {
-	padding: 0px 15px;
-	height: 0px;
-	opacity: 0;
-}
-.toggle-pannel h4 {
-	font-size: 18px;
-	padding-bottom: 10px;
-}
-.toggle-pannel p {
-	line-height: 1.5;
-}
-		
 #diplomes {
 	margin: 100px auto;
 	/*border: 1px solid #38628d;*/
@@ -487,20 +442,6 @@ h1 {
 	}
 }
 
-@media only screen and (min-width: 300px) and (max-width: 992px) {
-
-	.questions {
-		width: 90%;
-		margin: 5px auto;
-	}
-}
-
-@media only screen and (max-width: 815px) {
-	.questions {
-		width: 55%;
-	}
-}
-
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 	header {
 		height: 30vh;
@@ -514,15 +455,13 @@ h1 {
 		font-size: 40px;
 	}
 	#content1 img {
+		
 		width: auto;
 		height: 50%;
 	}
 	.cartes {
 		height: 60vh;
 		margin: 0 auto;
-	}
-	.questions {
-		width: 70%;
 	}
 	#diplomes {
 		margin: 50px auto 0;
