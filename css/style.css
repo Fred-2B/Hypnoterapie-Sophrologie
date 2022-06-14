@@ -279,6 +279,8 @@ h1 {
 	text-decoration: none;
 }
 
+	/* FAQ*/
+
 .bloc4 {
 	margin: 108px auto;
 	padding: 25px 15px 50px;
@@ -287,9 +289,69 @@ h1 {
 	box-shadow: #2c3e50 0px 3px 25px 2px;
 }
 
+.accordion {
+    width: 60%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
 .accordion-item {
-	width: 80%;
-	margin: 0 auto;
+    background-color: #fff;
+    color: #2c3e50;
+    margin: 1rem 0;
+    
+}
+
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 1.8rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+	box-shadow: 0 3px 5px 0 #2c3e50;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.4s;
+	box-shadow: 0 2px 5px 0 #2c3e50;
+}
+
+.accordion-item-header:hover {
+    background-color: rgb(199, 199, 199);
+}
+
+.accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+.accordion-item-header.active::after {
+    content: "\2212";
+    transform: rotate(180deg);
+}
+
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.6s ease-out;
+}
+
+.accordion-item-body-content {
+	background-color: #e0e0e4;
+    padding: 1rem;
+    line-height: 1.5rem;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+}
+
+@media(max-width:767px) {
+    html {
+      font-size: 14px;
+    }
 }
 
 #content4 {
