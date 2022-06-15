@@ -11,7 +11,7 @@ body {
 }
 
 .container-iframe {
-	background: #f1f1f1;
+	background-color: #e0e0e4;
 }
 
 video {
@@ -185,23 +185,19 @@ h1 {
 	/* CONTENT */
 
 #content1 {
-	padding: 50px 0;
-	border-bottom: 1px solid  #2c3e50;
-	background: #f1f1f1;
+	padding: 80px 0 50px;
+	border-bottom: 3px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
+	/*background: #f1f1f1;*/
 }
 
-#content1 .image {
-	display: flex;
-}
-
-#content1 .img {
-	margin: auto;
-	border: 10px groove #38628d;
-	object-fit: contain;
+#content1 .imgage {
+	width: 400px;
+    padding: 10px 20px 0 0;
+    float: left;
 }
 
 #content1 strong {
-	font-weight: bold;
 	font-size: 22px;
 	color: #2c3e50;
 }
@@ -210,6 +206,7 @@ h1 {
 	font-family: 'Raleway', sans-serif;
 	text-align: justify;
 	font-size: 20px;
+	padding: 0;
 	color: #2c3e50;
 }
 
@@ -290,16 +287,22 @@ h1 {
 }
 
 .accordion {
-    width: 60%;
-    max-width: 1000px;
-    margin: 2rem auto;
+    width: 100%;
+    padding: 0 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.logo-image, .accordion-bloc {
+	width: calc(40% - 10px);
 }
 
 .accordion-item {
     background-color: #fff;
     color: #2c3e50;
     margin: 1rem 0;
-    
 }
 
 .accordion-item-header {
@@ -318,7 +321,7 @@ h1 {
 }
 
 .accordion-item-header:hover {
-    background-color: rgb(199, 199, 199);
+    background-color: #c0c0c0;
 }
 
 .accordion-item-header::after {
@@ -337,7 +340,7 @@ h1 {
 .accordion-item-body {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.6s ease-out;
+    transition: max-height 0.3s ease-out;
 }
 
 .accordion-item-body-content {
@@ -502,6 +505,13 @@ h1 {
 		font-weight: 400;
 		font-size: 50px;
 	}
+	.container-bloc {
+		max-width: 600px;
+	}
+	.logo-image, .accordion-bloc {
+		width: 80%;
+		margin: 20px;
+	}
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
@@ -510,16 +520,20 @@ h1 {
 	}
 	video {
 		height: 50vh;
+		padding-bottom: 100px;
 	}
 	h1 {
 		text-shadow: 1px 2px 6px #eee;
 		top: 15%;
 		font-size: 40px;
 	}
-	#content1 img {
-		
+	#content1 {
+		padding: 0;
+	}
+	#content1 .img {
 		width: auto;
 		height: 50%;
+		padding: 0;
 	}
 	.cartes {
 		height: 60vh;
