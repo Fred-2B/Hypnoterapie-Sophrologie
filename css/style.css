@@ -313,16 +313,17 @@ h1 {
 }
 
 .accordion {
-    width: 100%;
-    padding: 0 40px;
+    width: 80%;
+    padding: 0;
+	margin: 0 auto;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
-.logo-image, .accordion-bloc {
-	width: calc(40% - 10px);
+.logo-image {
+	width: 50%;
 }
 
 .accordion-item {
