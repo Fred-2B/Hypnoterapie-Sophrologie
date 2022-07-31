@@ -100,25 +100,25 @@ video {
 
 .box:before {
 	transform: rotateY(90deg) translate3D(-50px,0,50px);
-	background: url(../img/sophro10.jpg) no-repeat center/cover;
+	background: url(../img/sophro10rc.jpg) no-repeat center/cover;
 	content:'';
 }
 
 .box:after {
 	transform: rotateY(90deg) rotateZ(180deg) translate3D(50px,0,-50px);
-	background: url(../img/sophro7.jpg) no-repeat center/cover;
+	background: url(../img/sophro7rc.jpg) no-repeat center/cover;
 
 }
 
 .box i {
 	transform-style: preserve-3d;
 	transform: translate3D(0,0,100px);
-	background: url(../img/sophro9.jpg) no-repeat center/cover;
+	background: url(../img/sophro9rc.jpg) no-repeat center/cover;
 }
 
 .box i:before {
 	transform: translate3D(0,0,-100px);
-	background: url(../img/sophro11.jpg) no-repeat center/cover;
+	background: url(../img/sophro11rc.jpg) no-repeat center/cover;
 }
 
 .box i:after {
@@ -157,16 +157,7 @@ h1 {
 	height: auto;
 	border: 1px solid #2c3e50;
 	width: 400px;
-	
-	/*transition: .4s all ease-in-out;*/
 }
-
-/*.contact:hover {
-	background: #2c3e50;
-	box-shadow: #2c3e50 0px 3px 25px 15px;
-	border: 1px solid #ff3346;
-	cursor: pointer;
-}*/
 
 .minicard__content {
 	font-size: 20px;
@@ -174,6 +165,10 @@ h1 {
 	font-weight: 300;
 	color: #f1f1f1;
 	text-align: center;
+}
+
+.minicard__content p {
+	margin-bottom: 5px;
 }
 
 .minicard__content a {
@@ -374,18 +369,20 @@ h1 {
 	border: 1px solid #2c3e50;
 	padding: 15px;
 	border-radius: 10px;
-	background: #F5F5F5;
-	transition: .3s all ease-in-out;
-}
-
-.bloc4 figure:hover {
-	box-shadow: #2c3e50 0px 3px 25px 2px;
-	background: #ffffff;
+	background: #fff;
+	box-shadow: #2c3e50 0px 3px 15px 2px;
+	
 }
 
 .bloc4 a {
 	text-decoration: none;
+	transition: .3s all ease-in-out;
 }
+
+.bloc4 a:hover {
+	color: #000000;
+}
+
 
 	/* PRESTATIONS */
 
@@ -396,7 +393,7 @@ h1 {
 .bloc-P {
 	border-top: 1px solid red;
 	border-bottom: 1px solid red;
-	background-image: url(../img/jetée.jpg);
+	background-image: url(../img/jetéec.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	max-width: 100%;
@@ -473,6 +470,8 @@ h1 {
     }
 }
 
+	/* DIPLOMES */
+
 #diplomes {
 	margin: 100px auto;
 }
@@ -516,15 +515,10 @@ h1 {
 
 	/* CAROUSEL */
 
-#carouselExampleFade1 {
+#carouselExampleFade {
     width: 600px;
-    padding: 10px 20px 0 20px;
-    float: right;
-}
-
-#carouselExampleFade2 {
-    width: 600px;
-    padding: 10px 20px 0 20px;
+	height: auto;
+    padding: 6px 20px 0 20px;
     float: right;
 }
 
@@ -533,6 +527,8 @@ h1 {
     height: auto;
     border: 1px solid #2c3e50;
 }
+
+	/* SECTION RESPONSIVE */
 
 @media only screen and (max-width: 940px) {
 	h1 {
@@ -556,6 +552,7 @@ h1 {
 		top: 11%;
 		font-size: 38px;
 	}
+	
 }
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
@@ -597,6 +594,9 @@ h1 {
 		width: 40%;
 		margin: 0 auto;
 	}
+	.logo-image {
+		width: 60%;
+	}
 	.footer {
 		margin: 50px auto 0;
 	}
@@ -613,6 +613,11 @@ h1 {
 		width: 100%;
 		height: 50vh;
 		object-fit: cover;
+	}
+	.citation {
+		margin: 20px auto 0;
+		font-weight: 700;
+		font-size: 1.2rem;
 	}
 	#content1 {
 		padding: 80px 0 50px;
@@ -631,11 +636,6 @@ h1 {
 		font-weight: 400;
 		padding: 10px 0;
 		float: right;
-	}
-	.citation {
-		margin: 20px auto 0;
-		font-weight: 700;
-		font-size: 1.3rem;
 	}
 	.bloc h2, .bloc2 h2, .bloc3 h2, .bloc4 h2, #diplomes h2 {
 		font-weight: 500;
