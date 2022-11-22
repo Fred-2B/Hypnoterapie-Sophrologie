@@ -4,6 +4,18 @@ body {
 	height: 100vh;
 	background-color: #e0e0e4;
 	box-sizing: border-box;
+		animation: fadeInAnimation ease 3s; 
+     	animation-fill-mode: forwards; 
+		animation-iteration-count: 1; 
+    } 
+    @keyframes fadeInAnimation { 
+    0% 
+    { 
+    opacity: 0; 
+    } 
+    100% { 
+    opacity: 1; 
+    } 
 }
 
 header {
@@ -13,7 +25,7 @@ header {
 	background-size: cover;
 	background-attachment: fixed;
 	max-width: 100%;
-	height: 70vh;
+	height: 75vh;
 	border-bottom: 2px solid #2c3e50; 
 }
 
@@ -68,11 +80,11 @@ h2 {
 h1 {
 	text-align: center;
 	font-weight: 500;
-	font-size: 75px;
+	font-size: 70px;
 	font-family: 'Kaushan Script', cursive;
 	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
 	color: #2c3e50;
-	padding: 200px 0 0;
+	padding: 250px 0 0;
 }
 
 	/*  CONTACT/PLAN */
@@ -100,10 +112,8 @@ h1 {
 .bd-grid {
 	max-width: 1024px;
     display: grid;
-    grid-template-columns: 100%;
     grid-column-gap: 2rem;
-	width: calc(100% - 2rem);
-    margin-left: 1rem;
+	margin-left: 1rem;
     margin-right: 1rem;
 }
 
@@ -112,7 +122,7 @@ h1 {
 }
 
 .contact__info {
-    margin: auto 0;
+    margin: auto;
 }
 
 .contact__subtitle {
@@ -133,7 +143,7 @@ h1 {
 
 .contact__inputs {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     column-gap: 1rem;
 }
 
@@ -151,7 +161,7 @@ h1 {
     display: block;
     background-color: #2c3e50;
     color: #FAFAFF;
-    padding: .75rem 2.5rem;
+    padding: .55rem 2rem;
     margin-left: auto;
     border-radius: .5rem;
     border: none;
@@ -165,6 +175,7 @@ h1 {
     background-color: #FAFAFF;
     color: #2c3e50;
     border: 1px solid #2c3e50;
+	box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 25px 5px;
 }
 
 iframe {
@@ -175,23 +186,6 @@ iframe {
 	margin: 0 auto;
 }
 
-/*#contact, p, h5 {
-	padding: 0 0 0 5px;
-}
-
-#contact p a {
-	text-decoration: none;
-	color: #2c3e50;
-	font-size: 1.2rem;
-	font-weight: 500;
-	transition: .3s all ease-in-out;
-}
-
-#contact p a:hover {
-	color:  #ff3346;
-	text-shadow: black 0em 0em 0.1em;
-}*/
-
 	/*  TARIF */
 
 #tarif {
@@ -199,10 +193,6 @@ iframe {
 	background: #f1f1f1;
 	border-top: 1px solid #2c3e50;
 	border-bottom: 1px solid #2c3e50;
-	/*width: 700px;
-	border: 1px solid #ff3346;
-	border-radius: 10px;
-	box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 25px 5px;*/
 }
 
 #tarif p {
@@ -226,10 +216,53 @@ iframe {
 	background-color: #c0c0c0;
 }
 
+.footer .section-subtitle {
+	font-size: .9rem;
+}
+
 .footer .section-title1 {
 	color: #616161;
 	font-size: .9rem;
 }
+
+/*
+@media screen and (min-width: 900px) {
+	header {
+		height: 50vh;
+	}
+	h1 {
+		font-weight: 100;
+		font-size: 50px;
+		padding: 200px 0 0;
+	}
+	#contact h2 {
+		padding: 3rem 0 1.2rem;
+		font-size: 40px;
+	}
+	.contact__input {
+		max-width: 650px;
+    	display: grid;
+		margin: 8px auto;
+	}
+	.contact__button {
+		margin: 10px auto 0;
+	}
+	h2 {
+		padding: 3rem 0 1.2rem;
+		font-size: 40px;
+	}
+	.plan iframe {
+		width: 600px;
+		margin-left: 20%;
+		margin-right: 22%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.contact__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}*/
 
 
 @media screen and (min-width: 991px) {
@@ -247,10 +280,11 @@ iframe {
 @media screen and (min-width: 768px) {
 	.contact__container {
         grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
     }
+	
 	.contact__form {
         width: 380px;
+		margin: 0 auto;
     }
 	iframe {
 		width: 100%;
